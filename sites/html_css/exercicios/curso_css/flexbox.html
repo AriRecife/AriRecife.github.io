@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Norican&family=Pacifico&family=Satisfy&family=Yuji+Boku&display=swap');
+
+/*  -------------------------- media querys*-------------------------*/    
+
+/* Smartphones (600px para baixo) */
+
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {}
+
+
+/*  -------------------------- ----------------------------------------------------------*/    
+
+/*  --------configuracao para o footer ficar sempre la em baixo-------------*/    
+
+*{
+    box-sizing: border-box;
+  
+}
+
+
+.body1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.body1 #boa{
+    flex: 1 1 0;
+}
+
+/*  -------------------------- ----------------------------------------------------------*/    
+
+.topo-pai{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 224px;
+    background-color: rgb(237, 84, 77); 
+    
+}
+
+#topo-filho{
+    text-align: right;
+    font-family: 'Lobster', cursive;
+    color: aliceblue;
+    font-size: 67px;
+    border: 2px solid black;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+    flex-grow:1;
+
+
+
+
+
+}
+#topo-filho2{
+    border: 2px solid black;
+    text-align: center;
+    padding-right: 45px;
+    padding-left: 45px;
+
+
+
+}
+.botao-pai{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 50px;
+    background-color: black;
+   
+
+   
+
+}
+.botao-filho{
+    width: 100%;
+    margin-top: 1px;
+}
+
+#b1{
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid rgb(233, 227, 215);
+    border-radius: 3px;
+    padding-left:9px;
+    padding-right: 9px;
+    
+}
+#b1:hover{
+    background-color: aqua;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    height: 300px;
+    margin-top: 50px;
+    gap: 30px;
+    width: 94%;
+    margin-left: 10px;
+   
+   
+}
+.box img{
+    border-radius: 50%;
+    border: 3px solid rgb(201, 53, 53);
+    width: 290px;
+
+
+}
+.box p{
+   border: 1px solid black;
+   width: 700px;
+   text-align: justify;
+
+
+}
+
+
+footer{
+    width: 100%;
+    background-color: black;    
+    color: aliceblue;
+    padding: 34px;
+    text-align: center;
+   
+}
+.rodape{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+
+/*  -------------------------- media querys*-------------------------*/    
+
+@media only screen and (max-width: 600px) {    
+    .topo-pai{
+        display: flex;
+        height: 180px;
+             
+        }
+    .botao-pai{  
+        height: 120px;   
+    }
+    .botao-filho{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+   
+    #topo-filho{
+        display: flex;
+        justify-content: center;
+        padding-top: 1px;
+           
+            
+        }
+    #topo-filho2{
+        display: none;
+
+        }
+    #b1{
+        width: 100%;
+        text-align: center;
+    } 
+}
+/*  -------------------------- media querys*-------------------------*/    
+@media only screen and (max-width: 500px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 400px;
+        
+    }
+    .box p{
+        width: 380px;
+    }
+    .box img{
+        margin-top: 224px;
+    }
+    
+}
+@media only screen and (max-width: 433px) {
+
+    .box p{
+        width: 330px;
+    }
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+</style>
+
+
+<body class="body1">
+    <div class="topo-pai">
+        <h1 id="topo-filho">Jesus é fiel</h1>
+        <div id="topo-filho2">
+            <img src="imagens/sol.png" alt="">
+        </div>
+
+    </div>
+    <div class="botao-pai">
+        <div class="botao-filho">
+            <a id="b1" href="">botao</a>
+            <a id="b1" href="">botao</a>
+            <a id="b1" href="">botao</a>
+            <a id="b1" href="">botao</a>
+            <a id="b1" href="">botao</a>
+            <a id="b1" href="">botao</a>
+        </div>
+  </div>
+
+  <div class="box" id="boa">
+    
+    <img src="imagens/jesus3.jpg" alt="">
+    
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deleniti facilis exercitationem in natus, repellat molestiae quia facere tenetur optio voluptatum sed officiis dolore. Eveniet iure atque tenetur, vitae unde, ex sunt dolor saepe ad quasi earum, maiores excepturi labore nesciunt. Nesciunt similique dolore dolorum mollitia iste nulla voluptatum qui odio aperiam illo, voluptatem tempore animi? Veritatis quos architecto distinctio, adipisci fuga aliquam eveniet magnam iure. Reprehenderit quas distinctio quos esse aperiam sit consequatur qui aliquam, necessitatibus in iusto aut repellat! Aperiam, beatae! Totam architecto officia alias sit veritatis explicabo.</p>
+
+  </div>
+
+  
+
+  <footer>
+    <div class="rodape">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="imagens/instagram (1).png" alt=""></a>
+        <a href="https://www.facebook.com/ari.recife" target="_blank" rel="noopener noreferrer"><img src="imagens/facebook.png" alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=5581983613142" target="_blank" rel="noopener noreferrer"><img src="imagens/whatsapp.png" alt=""></a>
+    </div>
+    <div>
+        Todos os direitos &copy;Aristofanes 2023
+    </div>
+
+  </footer>
+  
+  
+
+
+
+
+   
+    
+</body>
+</html>

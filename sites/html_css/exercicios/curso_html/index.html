@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geral</title>
+</head>
+<!--tag <b> ou <strong> deixa tudo em negrito-->
+<!--tag <i> deixa tudo em italico-->
+<!--tag <del> deixa tudo com texto cancelado-->
+ <!--tag <hr> deixa linha em baixo de texto-->
+  <!--tag <pre> deixa texto pre formatado-->
+<!--tag <address> usada pra colocar endereço-->
+<!--<blockquote> serve pra escrever citaçao long-->
+<!--<q> serve pra escrever uma citaçao curta-->
+ <!--tag U deixa sublinhado-->
+ <!--<mark> deixa o texto com marca texto-->
+<!--Existem inumeros caracteres que começem com a letra &-->
+<!--
+    ESSAS TAG SERVE COMO LINK PRA QUALQUER PARTE DO SITE
+    <a href="#p3">voltar para 3 parargrafo</a>
+    ir para:
+    <a name="p3">texto do paragrafo que deseja ir</a>
+
+-->
+<!--tag <abbr> ao passar o mouse em cima aparece por extenso-->
+<!--link são:  <a href=""></a> e link que <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+vai pra outra pag sem fechar a anterior-->
+<!--tag <img> serve pra imagem-->
+<!--tag SIZE aumenta tamanho da caixa dos input do formulario-->
+<!--tag AUTOCOMPLETE="OF" apaga  acaixa dos input do formulario qundo envia a msg-->
+<!--style="height: 60px; altura da caixa do input do formulario-->
+<!--BORDER-COLLAPSE="COLLAPSE" retira o espaço vazio entre as bordas da celula e tabel-->
+
+
+<style>
+.primeiroUl{
+    background: black;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+
+li{
+    float:left;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    color:white;
+    padding:14px 16px;
+    text-decoration:none;
+    text-align:center;
+}
+li a:hover, .dropdown:hover .dropbtn{
+    background: red;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:white;
+    width: 150px;
+}
+
+.dropdown-content a{
+    color:black;
+    display: block;
+    text-align: left;
+    border:1px solid rgb(207, 207, 207);
+}
+
+.dropdown-content a:hover{
+    color:white;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+/*---------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------*/
+.tabela{
+    border: 1px solid black;
+    border-collapse: collapse; /* retira o espaço vazio entre as bordas da celula e tabel*/
+}
+.tabela tr td{
+    border: 1px solid black;
+}
+.tabela tr th{
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+
+
+
+  
+</style>
+
+
+<body>
+    <h1>formatacao de paragrafos</h1>
+    <hr>
+    <h2>USANDO NEGRITO</h2>
+
+    <b>
+    <p>ipsum dolor sit amet consectetur, adipisicing elit. Quam, sequi! Aperiam a, accusamus vero, amet odit corrupti reiciendis nam iusto quod magni ex fuga! Beatae neque laboriosam nam. Fuga dicta repudiandae dolorem sequi, quaerat velit. Nobis dignissimos provident soluta molestias illo earum consequuntur! Fugiat, pariatur dolor. Doloribus explicabo consectetur aperiam, voluptatem maxime enim rerum eos, sit odio, dolorum magni velit! Similique soluta harum libero, eveniet laudantium, ea illo doloremque dignissimos, quod aperiam fuga. Voluptatibus consectetur culpa voluptatum laborum ex ab obcaecati dolores quam quaerat maxime, repellat repudiandae consequatur laboriosam, sequi sit quidem corrupti, quibusdam cumque? Quam dolorem minus eos commodi, sapiente vel. Similique, ipsa. Quisquam delectus expedita .</p></b></a>
+    <hr>
+    <br>
+    <br>
+    <!---******************************************************************************************--->
+    <h2>USANDO ITALICO</h2>
+
+    <i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, temporibus ratione! Vitae voluptatibus ab harum perferendis nulla repellat voluptas. Modi, obcaecati ad optio iure corrupti ipsum facere laborum asperiores quidem blanditiis vel nesciunt, eos, unde distinctio rerum accusamus? Aliquid doloremque veritatis quia natus earum sint, voluptate voluptatum. Autem, incidunt consequuntur? Quidem quia illum est velit, excepturi reprehenderit esse laborum iste facere nulla vitae alias? Delectus iure officiis tempora quibusdam sint saepe nostrum nam corrupti eaque voluptates, rem, quia praesentium. Ad consequuntur tempora nulla nobis quam nisi nesciunt blanditiis officiis magni vel alias provident doloribus facilis dolorem magnam, est explicabo illo!</p></i>
+    <hr>
+        <!---******************************************************************************************--->
+
+    <h2>USANDO TAG STRONG QUE É UMA FORMA DE NEGRITO</h2>
+
+    <strong><p><a name="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam commodi optio fugit, magni reiciendis tempora modi ab enim dolorem atque voluptatum fugiat sit rem. Quibusdam, saepe impedit tempora vero neque hic minus quos, molestiae rem aspernatur cupiditate dolorum maiores dicta reprehenderit deserunt, soluta itaque inventore accusamus ratione pariatur? Fuga.</a></p></strong>
+
+    <h2>LINK PRA DIRECIONAR A QUALQUER PARTE DO SITE</h2>
+    <p><a href="#p3">voltar para 3 parargrafo</a></p> 
+    <hr>
+        <!---******************************************************************************************--->
+
+    <h2>CANCELANDO TEXTO</h2>
+
+    <del><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro est omnis a magni, exercitationem quaerat doloremque atque tempora itaque esse cupiditate cumque non, odio tempore? Sed distinctio commodi exercitationem fugiat.</p></del>
+    <hr>
+        <!---******************************************************************************************--->
+
+    <h2>COLOCANDO TEXTO PRE DEFINIDO</h2>
+
+    <pre>
+    vai brasil
+    vaiiiiiiiii
+    
+
+    penta campeao!!!!!
+    
+
+    </pre>
+    <hr>
+        <!---******************************************************************************************--->
+
+    <h2>COLOCANDO ENDEREÇO</h2>
+
+    <address>
+        rua seis de março, 90. <br>
+        Recife, CEP 50.741-180 <br>
+        Pernambuco <br>
+    </address>
+    <hr>
+        <!---******************************************************************************************--->
+
+    <h2>CITAÇAO LONGA</h2>
+
+    <blockquote> citaçao longa: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis ratione, libero in corporis consequuntur.
+    </blockquote>
+
+    <hr>
+ <!---******************************************************************************************--->
+
+    <h2>CITAÇAO CURTA</h2>
+
+    <p><q>
+        citacao curta Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolor.
+    </q></p>
+
+    <hr>
+<!---******************************************************************************************--->
+
+    <h2>COLOCANDO SUBLINHADO</h2>
+
+    <p><u>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis nihil quas impedit, doloribus, error delectus ipsa consequuntur sapiente nisi hic rem labore, aliquid officiis non? Deserunt, ab. Laboriosam, eum! Dolores in perspiciatis magnam beatae cum voluptatibus eligendi nemo temporibus!
+    </p></u>
+
+    <hr>
+  <!---******************************************************************************************--->
+
+    <h2>CITACAO</h2>
+
+    <cite>Deus</cite> <br><br>
+    <hr>
+ <!---******************************************************************************************--->
+
+    <h2>USANDO TAG MARK</h2>
+
+    <mark>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui recusandae nam soluta, distinctio, cumque alias architecto, est earum perspiciatis iusto aperiam cupiditate iste nostrum in harum voluptates obcaecati cum beatae!
+    </mark>
+
+    <hr>
+ <!---******************************************************************************************--->
+
+    <h2>CARACTERES ESPECIAIS</h2>
+
+    <p>cararcteres, existem varios sites que dao o codigo: <br>
+        &lt;  
+        &quot; 
+        &copy;
+        &real;
+        &rbbrk;
+        
+    </p>
+    <hr>
+<!---******************************************************************************************--->
+
+    <h2>COLOCANDO LINKS</h2>
+
+    <a href="https://emojipedia.org/">site emojis</a> <br> <!--abre link na msm pagina-->
+    <a href="http://emojipedia.org/" target="_blank" rel="site emoji">site emojis</a> <br><!--abre em outra janela-->
+    <a href="cursinho.html">ir para pag cursinho</a> <br>
+    <a href="index.html">pagina inicial</a>
+
+    <hr>
+<!---******************************************************************************************--->
+
+    <h2>LINK PRA DIRECIONAR A QUALQUER PARTE DO SITE</h2>
+    <p><a href="#p3">voltar para 3 parargrafo</a></p> 
+
+    <hr>
+<!---******************************************************************************************--->
+
+    <h2>ABREVIATURA DE TEXTO</h2>
+
+    <abbr title="Associaçao Pernambucana de futebol">APF</abbr>
+    <hr>
+    <h2>LINK PRA DIRECIONAR A QUALQUER PARTE DO SITE</h2>
+ <!---******************************************************************************************--->
+
+    <h2>IMAGENS COM TAMANHOS DIFERENTE E TEXTOS DO LADO</h2>
+    <img src="imagens/jesus.jpg" alt="jesus" width="300" height="200">
+    <p>jesus é fiel<img src="imagens/jesus.jpg" width="50" height="80" alt="jesus"></p>
+    <p><img src="imagens/jesus.jpg" alt="jesus" width="100" height="150">jesus é bom</p>
+
+    <hr>
+ <!---******************************************************************************************--->
+
+    <h2>IMAGEM COM LINK</h2>
+    <a href="https://www.youtube.com/watch?v=nPEpaft1y1k&t=8616s" target="_blank">
+        <img src="imagens/pexels-pixabay-210019 (1).jpg" alt="carro vermelho">
+    </a>
+    <hr>
+<!---******************************************************************************************--->
+<h2>MENU DROPDAW</h2>
+
+<ul class="primeiroUl">
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li class="dropdown">
+        <a class="dropbtn" href="#">Link</a>
+        <div class="dropdown-content">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+    </li>
+</ul>
+      <br><br><br><br>
+<hr>
+<!---******************************************************************************************--->
+
+    <h2>NO SITE http://www.image-map.net/ VOCE PODE COLOCAR LINKS EM CADA OBJETO DA IMAGEM </h2>
+
+<!-- Image Map Generated by http://www.image-map.net/ -->
+<img src="imagens/como-escolher-objeto-na-decoracao (1).jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="potes" title="potes" href="https://www.youtube.com/watch?v=nPEpaft1y1k&amp;t=8616s" coords="15,141,19,221,31,270,76,277,115,288,179,307,223,298,257,273,256,111,236,91,193,82,150,82,105,78,53,78,26,88" shape="poly">
+    <area target="_blank" alt="mesa" title="mesa" href="https://www.iloveimg.com/pt/download/kq819f5swyfds2bcv7mq8z5bzm6f8pkdrr2jvmt3gzd55y71rnp7fgAdr76d44477x7lyqAyg6zs9dtlysvnp31ykj4kl3pr6bkvx1q45ss8hj03bvnwsm9r5qA6jc8k9vgrfylfss8ssmh1fc7q904030ll8b8rns0b05k2gygfk32vA2l1/3" coords="266,245,279,294,302,312,341,327,429,331,484,328,567,333,592,318,591,259,592,210,588,141,538,123,493,107,435,91,392,101,341,112,304,128,273,139" shape="poly">
+    <area target="_blank" alt="sofa" title="sofa" href="http://ghjinstalacoes.com.br/" coords="339,0,341,21,341,43,345,85,365,93,396,87,426,84,454,86,488,100,541,114,574,123,596,121,594,1" shape="poly">
+    <area target="" alt="" title="" href="" coords="" shape="0">
+</map>
+<hr>
+<!---******************************************************************************************--->
+
+<h2>ICONE DO LADO DO TEXTO</h2>
+<h2><img src="imagens/coracao.png" height="23" alt="">Jesus vive</h2>
+<hr>
+<!---******************************************************************************************--->
+
+<h2>CRIANDO TABELAS</h2>
+    <Table class="tabela">
+        <tr>
+            <th>Nome</th>
+            <th>função</th>
+            <th>Setor</th>
+        </tr>
+        <tr>
+            <td>Ari</td>
+            <td>téc. seg. trab</td>
+            <td>Seg. trabalho</td>
+        </tr>
+        <tr>
+            <td>jose</td>
+            <td>mecanico</td>
+            <td>Oficina geral</td>
+        </tr>
+    </Table>
+    <hr>
+<!---******************************************************************************************--->
+
+    <h2>CRIANDO LISTAS NÃO ORDENADAS</h2>
+    <div class="y">
+        <ul>
+        
+            <li>feijao</li>
+            <li>arroz</li>
+            <li>biscoito</li>
+                
+        </ul>
+
+    </div>
+   
+
+    <p>Segunda lista</p>
+
+    <ul>
+        <li>feijao</li>
+            <ul>
+                <li>preto</li>
+                <li>mulato</li>
+                <li>verde</li>
+            </ul>
+        <li>arroz</li>
+            <ul>
+                <li>branco</li>
+                <li>parbolizado</li>
+            </ul>
+
+      </ul>
+      <p>terceira lista</p>
+      <ul>
+        <li>feijao</li>
+            <ul>
+                <li>preto</li>
+                    <ul>
+                        <li>kifeijao</li>
+                        <li>feijao kicaldo</li>
+                    </ul>
+                <li>mulato</li>
+                <li>verde</li>
+            </ul>
+        <li>arroz</li>
+            <ul>
+                <li>branco</li>
+                <li>parbolizado</li>
+            </ul>
+<hr>
+<!---******************************************************************************************--->
+
+<h2>CRIANDO LISTAS ORDENADAS</h2>
+<ol>
+    <li>jose</li>
+    <li>ana</li>
+    <li>marcia</li>
+</ol>
+
+<p>Segunda forma</p>
+<ol>
+    <li>brasil</li>
+        <ol>
+            <li>Pernambuco</li>
+            <li>paraiba</li>
+        </ol>
+    <li>Rio grande do sul</li>
+        <ol>
+            <li>linhares</li>
+            <li>pelotas</li>
+        </ol>
+</ol>
+<hr>
+ <!---******************************************************************************************--->
+
+<h2>USANDO IFRAMES</h2>
+
+<iframe src="index.html" frameborder="0" width="55%" height="300"></iframe>
+<br>
+<br>
+
+<h3>colocando videos do youtube via iframe</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nPEpaft1y1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br>
+
+<hr>
+<!---******************************************************************************************--->
+<!--riquired torna obrigatório o preenchimento do campo-->
+<h2>CRIANDO FORMULARIOS</h2>
+<form method="post" action="api/posturl">
+    <div>
+        <label for="idtexto">Texto</label>
+        <input required type="text" name="idtexto" id="idtexto" placeholder="digite seu nome" size="30px" autocomplete="of" style="height: 60px;">
+    </div>
+    <br>
+    
+    <div>
+        <label for="idsenha">senha</label>
+        <input required type="password" name="idsenha" id="idsenha" placeholder="digite sua senha" autocomplete="of">
+    </div>
+    <br>
+    <div>
+        <label for="idtelefone">Telefone</label>
+        <input required type="tel" name="idtelefone" id="idtelefone" placeholder="DDD + número" autocomplete="of">
+    </div>
+    <div>
+        <label for="iddata">Data</label>
+        <input required type="date" name="iddata" id="iddata" autocomplete="of">
+    </div>
+    <div>
+        <label for="idarquivo">Arquivo</label>
+        <input type="file" name="idarquivo" id="idarquivo" autocomplete="of" ">
+    </div>
+    <div>
+        <label for="idemail">E-mail</label>
+        <input required type="email" name="idemail" id="idemail">
+    </div>
+    <div>
+        <label for="idmensagem">Mensagem</label>
+        <input required type="text" name="idmensagem" id="idmensagem"  placeholder="Digite sua msg">
+    </div>
+    <div>
+        <label for="idcheck1">Check 1</label>
+        <input required type="checkbox" name="idcheck1" id="idcheck1">
+        <label for="idcheck2">Check 2</label>
+        <input required type="checkbox" name="idcheck2" id="idcheck2">
+    </div>
+    <div>
+        <label for="idradio1">Radio 1</label>
+        <input required type="radio" name="idradio1" id="idradio1">
+        <label for="idradio2">Radio 2</label>
+        <input required type="radio" name="idradio1" id="idradio1">
+    </div>
+    <div>
+        <label for="idselecao">Selecione:</label>
+        <select required name="selecao" id="idselecao">
+            <option selected value="">selecione...</option>
+            <option value="Recife">Recife</option>
+            <option value="fortaleza">fortaleza</option>
+        </select>
+    </div>
+    <div>
+        <label for="idtextoarea">mensagem</label>
+        
+        <textarea required name="idtextoarea" id="" cols="90" rows="10" placeholder="digite sua msg"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </div>
+</form>
+<br>
+<hr>
+<!---******************************************************************************************--->
+<h2>PICKLIST COM LINK</h2>
+<p>selecione o estado:</p>
+<select onchange="location.href=this.value">
+    <option selected disabled value="">selecione...</option>
+    <option value="https://emojipedia.org/">site emojis</a></option>
+    <option value="https://www.youtube.com/watch?v=0oKKt4775ow">youtube</option>
+</select>
+<hr>
+<!---******************************************************************************************--->
+<h2>INSERINDO AUDIO</h2>
+<div>
+    <audio controls  src="henriqueejulianooficial-desbeijar-minha-boca-c2f932ee.mp3" type=""></audio>
+</div>
+<!---******************************************************************************************--->
+<h2>INSERINDO VIDEO</h2>
+<div>
+    <video poster="imagens/jesus.jpg" controls src="video.mp4" width="500" height="250"></video>
+</div>
+<!---******************************************************************************************--->
+
+<h2>CONCEITO DA TAG DIV</h2>
+
+<img src="imagens/div.img" alt="">
+
+    <h2>Deus</h2>
+    <h3>Deus</h3>
+<!---******************************************************************************************--->
+
+</body>
+</html>
+

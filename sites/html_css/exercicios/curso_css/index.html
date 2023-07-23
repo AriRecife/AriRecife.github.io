@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outro curso</title>
+    
+    <style> /* a tag STYLE colocamos para criar todo o css */
+   @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Yuji+Boku&display=swap');
+   /* logo da tag <style> eu importei do google fontes novas fontes */
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        background-color: aliceblue;
+    }
+    .fundo{
+        position: fixed; /* fixar e naodescer ou subir com a barra fr rolagem */
+        background-image: radial-gradient(circle, red, yellow);
+        width: 100%;
+        height: 90px;
+    }
+    .fundo2{
+        background-image: url(imagens/pexels-jonathan-borba-5489194.jpg);
+        background-size: cover; /* imagem de fundo caber em todo o espaço*/
+        width: 100%;
+        height: 300px;
+    }
+    .fundo3{
+        background-image: url(imagens/pexels-jonathan-borba-5489194.jpg);
+        background-repeat: no-repeat;  /* não repetir imagem de fundo */
+        width: 100%;
+        height: 300px;
+    }
+    .fundo4{
+        background-image: url(imagens/como-escolher-objeto-na-decoracao\ \(1\).jpg);
+        background-repeat: repeat; 
+        width: 100%;
+        height: 300px;
+        opacity: 0.1; /* efeito transparencia */
+
+    }
+    .fundo4{
+        background-image: url(imagens/jesus.jpg); /* colocar imagem de fundo */
+        background-size: cover; /* imagem de fundo caber toda */
+        background-position: center; /* imagem de fundo centralizada */
+        width: 100%;
+        height: 300px;
+    }
+    .borda{
+        background-color: blue;
+        width: 100%;
+        height: 80px;
+        border: 3px solid black;
+    }
+    .borda1{
+        background-color: rgb(0, 255, 106);
+        width: 100%;
+        height: 80px;
+        border-left: 3px solid black;
+        border-top: 3px solid rgb(88, 32, 177);
+        border-right: 3px solid rgb(248, 168, 20);
+        border-bottom: 5px solid rgb(231, 22, 7);
+    }
+    .borda2{
+        background-color: aquamarine;
+        border: 2px solid rgb(65, 21, 94);
+        border-radius: 0px 0px 13px 24px; /* borda arrendondada */
+        margin-top: 30px;
+    }
+    .borda3{
+        background-image: linear-gradient(67deg, blue 89px, rgb(222, 222, 228)); /* efeito degradê */
+        border: 4px solid green;
+        border-radius: 12px;  /* borda arrendondada */
+        width: 90%;
+        height: 45px;
+        margin-top: 30px;
+    }
+    .borda4{
+        background-color: chartreuse;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.349); /* texto com relevo 3D */ 
+       
+        height: 50px;
+        margin-left: 68px;
+        margin-right: 79px;
+    }
+    .texto{
+        font-size: 50px;
+        text-align: center;
+        background-image: linear-gradient(180deg, blue 10%, rgb(80, 141, 72));
+        background-clip: text; /* usado para degradê em texto */
+        -webkit-background-clip: text; /* usado para degradê em texto */
+        color: transparent; /* usado para degradê em texto */
+    }
+    .texto2{
+        font-size: 60px;
+        text-align: center;
+        color: blue;
+        text-shadow: 2px 2px 2px black;
+    }
+    #texto3{
+        font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+        text-align: left;
+        text-transform: uppercase; /* letras do texto todas em caixa alta  */
+        text-decoration: underline; /* texto co sublinhado ______  */
+    }
+    #texto4{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify; /* texto justificado  */
+        text-decoration: line-through; /* risca o texto */
+    }
+    #texto5{
+        font-family: 'Yuji Boku', serif; /* importada do google fontes */
+
+        text-align: center;
+        text-decoration: underline; /* texto co sublinhado ______  */
+        text-transform: capitalize; /* todas palavras começam em mauisculas */
+    }
+    #texto6{
+        font-family: 'Pacifico', cursive; /* importada do google fontes */
+        text-decoration: overline; /* texto com sublinhado em cima da palavra  */
+
+    }
+    #texto7{
+        font-family: Arial, Helvetica, sans-serif;
+        text-indent: 50px;  /* espaço no inicio do texto  */
+        letter-spacing: 5px; /* espaço entre as letras do texto  */
+        line-height: 0.9;   /* espaço entre as linhas do texto  */
+        word-spacing: 12px; /* espaço entre as palavras do texto  */
+
+    }
+    #botao{
+        font-size: 30px;
+        padding: 8px;
+        margin-left: 110px;
+        margin-right: 513px;
+        text-align: center;
+        border-radius: 4px;
+        background-image: radial-gradient(circle, black, rgba(23, 196, 66, 0.753));
+        color: white;
+        text-decoration: none; /* retirar linha sublinhada do link */
+        cursor: all-scroll; /* o cursor do mouse muda*/
+    }
+    #botao:hover{
+        background-color: rgb(241, 245, 0);
+    }
+    #botoes1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: blue;
+        background-color: black;
+        margin: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 4px;
+    }
+    #botoes1:hover{
+        background-color: blue;
+        color: aliceblue;
+        border: 5px solid yellow;
+    }
+
+    #botoes2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        margin-left: 12px;
+        margin-top: 30px;
+        padding-right: 12px;
+        padding-left: 12px;
+        color: bisque;
+        background-color: blue;
+        border-radius: 3px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.671);
+    }
+    #botoes2:hover{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        margin-left: 12px;
+        margin-top: 30px;
+        padding-right: 12px;
+        padding-left: 12px;
+        color: bisque;
+        background-color: rgb(255, 166, 0);
+        border-radius: 3px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.671);
+    }
+    #botoes3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 12px;
+        text-decoration: none;
+        color: brown;
+    }
+    #botoes3:hover{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 12px;
+        text-decoration: none;
+        color: brown;
+        border-bottom: 2px solid blue;
+        border-right: 2px solid rgb(240, 124, 17);
+
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    #botoes4{
+        text-decoration: none;
+        margin-left: 15px;
+        color: black;
+    }
+    #botoes4:hover{
+        text-decoration: none;
+        margin-left: 15px;
+        color: rgb(25, 189, 33);
+        font-size: 23px;
+    }
+    .pz{
+        display: inline-block;
+        border: 2px solid red;
+        width: 30%;
+        position: relative;
+        left: 45px;
+
+    }
+    .pc{
+        display: inline-block;
+        border: 2px solid red;
+        width: 30%;
+        position: relative;
+        left: 100px;
+        top: 50px;
+
+    }
+    .relative{
+        position: relative;
+        display: inline-block;
+        background-color: blue;
+        height: 350px;
+        width: 900px;
+    }
+    #jesus{
+        position: absolute;
+        left: 30px;
+        top: 10px
+    }
+    #sonic{
+        position: absolute;
+        left: 337px;
+        top: -44px;
+
+    }
+    
+    
+   
+    
+   
+   
+    
+
+
+
+ 
+
+
+    </style>
+</head>
+<body>
+    
+
+<div class="fundo">
+        <p>
+            .fundo{ <br>
+                background-color: seagreen; <br>
+                width: 100%; <br>
+                height: 90px; <br>
+            } <br>
+        </p>
+</div>
+<!-----***************************************************************************************************-->
+
+<div class="fundo2">
+    <p>class="fundo2"</p>
+
+</div>
+<!-----***************************************************************************************************-->
+<div class="fundo3">
+    <p>class="fundo3"</p>
+</div>
+<!-----***************************************************************************************************-->
+
+<div class="fundo4">
+    <p>class="fundo4"</p>
+</div>
+<!-----***************************************************************************************************-->
+<div class="fundo5">
+    <p>class="fundo5"</p>
+</div>
+<!-----***************************************************************************************************-->
+<div class="borda">
+    <p>class="borda"</p>
+</div>
+<br>
+<!-----***************************************************************************************************-->
+<div class="borda1">
+    <p>class="borda1"</p>
+</div>
+<br>
+<!-----***************************************************************************************************-->
+<div class="borda2">
+    <p>class="borda2"</p>
+</div>
+<!-----***************************************************************************************************-->
+<div class="borda3">
+    <p>class="borda3"></p>
+</div>
+<br>
+<!-----***************************************************************************************************-->
+<div class="borda4">
+    <p>class="borda4"</p>
+    
+</div>
+
+<!-----***************************************************************************************************-->
+<div class="texto">
+    <h2>Jesus é grande</h2>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-----***************************************************************************************************-->
+<div class="texto2">
+    <h2>Jesus é grande</h2>
+</div>
+<!-----***************************************************************************************************-->
+<div>
+    <p id="texto3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ex fugiat exercitationem sunt, maiores, rerum mollitia ipsum minus perspiciatis id, necessitatibus minima nostrum doloremque reprehenderit ea! Soluta necessitatibus incidunt quo?
+    </p>
+    <br>
+    <!-----*********************************************************************************************-->
+
+    <p id="texto4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ex fugiat exercitationem sunt, maiores, rerum mollitia ipsum minus perspiciatis id, necessitatibus minima nostrum doloremque reprehenderit ea! Soluta necessitatibus incidunt quo?
+    </p>
+    <br>
+<!-----***************************************************************************************************-->
+    <p id="texto5">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ex fugiat exercitationem sunt, maiores, rerum mollitia ipsum minus perspiciatis id, necessitatibus minima nostrum doloremque reprehenderit ea! Soluta necessitatibus incidunt quo?
+    </p>
+    <br>
+<!-----***************************************************************************************************-->
+    <p id="texto6">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ex fugiat exercitationem sunt, maiores, rerum mollitia ipsum minus perspiciatis id, necessitatibus minima nostrum doloremque reprehenderit ea! Soluta necessitatibus incidunt quo?
+    </p>
+    <br>
+<!-----***************************************************************************************************-->
+    <p id="texto7">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ex fugiat exercitationem sunt, maiores, rerum mollitia ipsum minus perspiciatis id, necessitatibus minima nostrum doloremque reprehenderit ea! Soluta necessitatibus incidunt quo?
+    </p>
+</div>
+<br>
+<!-----***************************************************************************************************-->
+
+
+<!-----***************************************************************************************************-->
+<div>
+    <h2>criando tipos de botões: 👇👇👇👇👇</h2>
+</div>
+<div>
+    <a id="botao" href="http://" target="_blank" rel="noopener noreferrer">botão</a><br><br>
+    <a id="botoes1" href="">botão</a><br><br>
+    <a id="botoes2" href="">botão</a><br><br>
+    <a id="botoes3" href="">botão</a><br><br>
+    <a id="botoes4" href="">botão</a><br><br>    
+
+</div>
+<!-----***************************************************************************************************-->
+<div class="pz">
+    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum porro provident veniam eligendi voluptatibus. Quia libero velit esse officiis dolore eaque, perspiciatis repudiandae non dolor minima excepturi quos nulla! Eius.</p>
+</div>   
+
+<div class="pc">
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ducimus pariatur quo quae veritatis magnam officiis, numquam saepe vel esse provident ab eaque? Quo voluptas iure recusandae deleniti? Debitis, unde.
+    </p>
+
+</div>
+<!-----***************************************************************************************************-->
+
+<h2>usando tag DISPLAY: INLINE-BLOCK. e a tag </h2>
+
+<div class="relative">
+    relative com absoluta dentro
+    <div id="jesus">
+        <img src="imagens/jesus2.jpg" alt="">
+    </div>
+    <div id="sonic">
+        <img src="imagens/Sonic imagem png.png" alt="">
+    </div>
+    
+
+</div>
+
+
+</body>
+</html>
